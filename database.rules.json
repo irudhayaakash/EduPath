@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "edupath": {
+      "users": {
+        "$userKey": {
+          ".read": "auth != null && $userKey.endsWith('(' + auth.uid + ')')",
+          ".write": "auth != null && $userKey.endsWith('(' + auth.uid + ')')"
+        }
+      }
+    }
+  }
+}
